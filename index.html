@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en" data-framework="javascript">
+
+<head>
+   <meta charset="utf-8">
+   <title>vanilla js</title>
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+   <section class="todoapp">
+      <header class="header">
+         <h1>Контактная информация</h1>
+         <form>
+            <div>
+               <label for="fname"><strong>Фамилия:<abbr title="required">*</abbr></strong></label>
+               <input type="text" id="fname" autocomplete="off" placeholder="Введите фамилию...">
+            </div>
+            <div>
+               <label for="lname"><strong>Имя:<abbr title="required">*</abbr></strong></label>
+               <input type="text" id="lname" autocomplete="off" placeholder="Введите имя...">
+            </div>
+            <div>
+               <label for="patronymic"><strong>Отчетсво:<abbr title="required">*</abbr></strong></label>
+               <input type="text" id="patronymic" autocomplete="off"
+                  placeholder="Введите отчество...">
+            </div>
+            <div>
+               <label for="bday"><strong>Дата рождения*:</strong></label>
+               <input type="date" id="bday" name="bday">
+            </div>
+            <div class="sex">
+               <label for="sex"><strong>Пол:</strong></label>
+               <input type="radio" id="sex" name="sex">Мужской
+               <input type="radio" id="sex" name="sex">Женский
+            </div>
+            <div class="education">
+               <label for="education"><strong>Высшее образование:</strong></label>
+               <input type="checkbox" id="education" name="education">
+            </div>
+            <div>
+               <label for="firstDay"><strong>Дата приёма на работу:</strong></label>
+               <input type="date" id="firstDay" name="firstDay">
+            </div>
+            <input type="submit" value="Добавить">
+         </form>
+
+
+
+         <input class="new-todo" placeholder="What needs to be done?" autofocus>
+
+
+
+         
+      </header>
+
+
+
+
+
+
+
+
+
+
+      <section class="main">
+         <input id="toggle-all" class="toggle-all" type="checkbox">
+         <label for="toggle-all">Mark all as complete</label>
+         <ul class="todo-list">
+         </ul>
+      </section>
+      <footer class="footer">
+         <span class="todo-count"></span>
+         <ul class="filters">
+            <li>
+               <a href="#/" class="selected">All</a>
+            </li>
+            <li>
+               <a href="#/active">Active</a>
+            </li>
+            <li>
+               <a href="#/completed">Completed</a>
+            </li>
+         </ul>
+         <button class="clear-completed">Clear completed</button>
+      </footer>
+   </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <footer class="info">
+      <p>Double-click to edit a todo</p>
+   </footer>
+
+
+
+
+   <script src="js/helpers.js"></script>
+   <script src="js/store.js"></script>
+   <script src="js/model.js"></script>
+   <script src="js/template.js"></script>
+   <script src="js/view.js"></script>
+   <script src="js/controller.js"></script>
+   <script src="js/app.js"></script>
+</body>
+
+</html>
